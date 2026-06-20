@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#0d0d0d">
+  <title>RUSSIA RP | Ролевой проект нового уровня</title>
+  <meta name="description" content="RUSSIA RP — динамичный RP-проект с высоким онлайном, фракциями, событиями и живой экономикой.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="RUSSIA RP logo">
+        <span>RUSSIA RP</span>
+      </a>
+
+      <nav class="nav" id="navMenu">
+        <a href="#top">Главная</a>
+        <a href="#roles">Роли</a>
+        <a href="#path">Пути</a>
+        <a href="#servers">Сервера</a>
+        <a href="#guide">Гайд</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-side">
+        <div class="online-pill">
+          <span class="dot"></span>
+          <span>Игроков:</span>
+          <strong id="liveOnline">0</strong>
+        </div>
+        <a class="btn btn-accent desktop-only" href="launcher.apk" download>
+          <i data-lucide="download"></i>
+          Лаунчер
+        </a>
+        <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Проект открыт! Залетай!</p>
+          <h1>Залетай на <span>RUSSIA RP</span></h1>
+          <p class="hero-text">
+            Мы не имеем отношения к проекту RUSSIA RP(старый движок).
+			Сайт проекта на котором сейчас вы находитесь  пренадлежит компании GAMEBOLT.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="launcher.apk" download>
+              <i data-lucide="play"></i>
+              Начать играть
+            </a>
+            <a class="btn btn-dark" href="#media">
+              <i data-lucide="telegram"></i>
+              Telegram
+            </a>
+          </div>
+          <p class="hero-note">Поддержка платформ: Android 8+, Windows launcher, голосовой чат.</p>
+          <div class="metrics">
+            <article class="metric">
+              <strong data-counter="20">0</strong>
+              <span>Регистраций</span>
+            </article>
+            <article class="metric">
+              <strong data-counter="10">0</strong>
+              <span>Рекорд онлайна</span>
+            </article>
+            <article class="metric">
+              <strong id="heroOnline">0</strong>
+              <span>Онлайн сейчас</span>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section roles" id="roles">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Стили игры</p>
+          <h2>Выбери свой формат в RUSSIA RP</h2>
+        </div>
+        <div class="roles-grid">
+          <article class="role-card role-police">
+            <div class="role-avatar"><img src="assets/cop.png" alt="Полиция"></div>
+            <div class="role-info">
+              <i data-lucide="shield"></i>
+              <h3>Полиция</h3>
+              <p>Патрули, погони и контроль порядка на улицах.</p>
+            </div>
+          </article>
+          <article class="role-card role-army">
+            <div class="role-avatar"><img src="assets/screen-night.png" alt="Госслужба"></div>
+            <div class="role-info">
+              <i data-lucide="landmark"></i>
+              <h3>Госслужба</h3>
+              <p>Карьера в структурах, ранги, стабильная зарплата.</p>
+            </div>
+          </article>
+          <article class="role-card role-medic">
+            <div class="role-avatar"><img src="assets/yard.jpg" alt="Городские работы"></div>
+            <div class="role-info">
+              <i data-lucide="hard-hat"></i>
+              <h3>Работы</h3>
+              <p>Зарабатывай с нуля, покупай тачки и открывай бизнес.</p>
+            </div>
+          </article>
+          <article class="role-card role-job">
+            <div class="role-avatar"><img src="assets/boss.png" alt="Бизнес"></div>
+            <div class="role-info">
+              <i data-lucide="briefcase-business"></i>
+              <h3>Бизнес</h3>
+              <p>Управляй доходами, рынком и влиянием на сервере.</p>
+            </div>
+          </article>
+          <article class="role-card role-crime">
+            <div class="role-avatar"><img src="assets/gang.png" alt="Криминал"></div>
+            <div class="role-info">
+              <i data-lucide="skull"></i>
+              <h3>Криминал</h3>
+              <p>Разборки, контроль районов и рискованные сделки.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section path" id="path">
+      <div class="container path-wrap">
+        <div class="section-head">
+          <p class="eyebrow">Путь развития</p>
+          <h2>Выбери свой маршрут</h2>
+        </div>
+        <div class="path-controls">
+          <button class="path-btn active" id="lawBtn" type="button">
+            <i data-lucide="shield-check"></i>
+            Путь закона
+          </button>
+          <button class="path-btn" id="outlawBtn" type="button">
+            <i data-lucide="flame"></i>
+            Путь вне закона
+          </button>
+        </div>
+        <div class="path-panel">
+          <img id="pathImage" src="assets/cop.png" alt="Путь закона">
+          <div class="path-content">
+            <h3 id="pathTitle">Карьера в госструктурах</h3>
+            <p id="pathText">
+              Начни с кадета, пройди отбор, займи старший ранг и управляй безопасностью города.
+              Системы званий, зарплаты, патрули, спецоперации и реальные RP-сценарии.
+            </p>
+            <ul>
+              <li>Полиция, армия, медицина</li>
+              <li>Стабильный доход и уважение</li>
+              <li>Доступ к закрытым миссиям</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section media" id="media">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Медиа проекта</p>
+          <h2>Атмосфера RUSSIA RP в кадре</h2>
+        </div>
+        <div class="media-grid">
+          <figure class="video-preview">
+            <img src="assets/screen-day.png" alt="Видео-превью проекта">
+            <button class="play-btn" type="button" aria-label="Запустить видео">
+              <i data-lucide="play"></i>
+            </button>
+          </figure>
+          <figure class="shot"><img src="assets/screen-night.png" alt="Игровой кадр 1"></figure>
+          <figure class="shot"><img src="assets/yard.jpg" alt="Игровой кадр 2"></figure>
+          <figure class="shot"><img src="assets/boss.png" alt="Игровой кадр 3"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section servers" id="servers">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Сервера проекта</p>
+          <h2>Один сервер • RED</h2>
+        </div>
+        <div class="servers-grid">
+          <article class="server-card">
+            <h3>RED</h3>
+            <div class="server-meta"><span>IP</span><strong>87.228.5.10:7777</strong></div>
+            <div class="server-meta"><span>Status</span><strong> Сервера работают</strong></div>
+            <div class="server-meta"><span>Максимум</span><strong>70 игроков</strong></div>
+            <div class="server-meta"><span>Текущий онлайн</span><strong id="serverOnline">0 / 70</strong></div>
+            <a class="btn btn-dark" href="#"><i data-lucide="gamepad-2"></i> Подключиться</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section news" id="news">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Новости проекта</p>
+          <h2>Свежие обновления</h2>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <span>ERROR 101</span>
+            <h3>Запуск нового сезона</h3>
+            <p>Обновлённый старт, новые награды и переработанный баланс экономических ролей.</p>
+            <a href="#">Читать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="RUSSIA RP logo">
+        <div>
+          <strong>RUSSIA RP</strong>
+          <p>Ролевой проект с высоким онлайном и сильным комьюнити.</p>
+        </div>
+      </div>
+      <div class="footer-social">
+<img src="assets/bolt.png" alt="GAMEBOLT">
+      </div>
+      <p class="footer-copy">© 2026 RUSSIA RP. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
